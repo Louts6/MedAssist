@@ -1,0 +1,38 @@
+# ===== Secrets / 环境变量（含 API Key，禁止提交）=====
+backend/.env
+backend/.env.docker
+.env.local
+*.local
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# ===== Node / 前端 =====
+node_modules/
+dist/
+dist-ssr/
+npm-debug.log*
+
+# ===== 用户上传与运行时生成的文件 =====
+backend/app/service/core/storage/file/
+
+# ===== DeepDoc 模型与编译产物（约 330MB，首次运行自动从 HuggingFace 下载）=====
+# 详见 backend/download_models.ps1
+*.onnx
+*.trie
+*.model
+
+# ===== 模型/工具缓存 =====
+**/.cache/
+
+# ===== IDE / OS =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
